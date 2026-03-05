@@ -10,7 +10,7 @@ const ProductCard = ({ product, index }) => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: '-50px' }}
             transition={{ duration: 0.7, delay: index * 0.1 }}
-            className="group flex flex-col bg-black border border-[#222] hover:border-accent transition-colors duration-400"
+            className="group flex flex-col bg-black border border-[#222] hover:border-accent transition-colors duration-400 rounded-2xl overflow-hidden"
         >
             {/* Image Container - Square Aspect Ratio */}
             <div className="relative aspect-square overflow-hidden bg-[#111]">

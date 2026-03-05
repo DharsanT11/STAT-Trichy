@@ -113,7 +113,7 @@ const Services = () => {
                                     direction={index % 2 !== 0 ? 'right' : 'left'}
                                     className={`${index % 2 !== 0 ? 'lg:order-2' : ''}`}
                                 >
-                                    <div className="relative group overflow-hidden border border-[#222] bg-[#111]">
+                                    <div className="relative group overflow-hidden border border-[#222] bg-[#111] rounded-2xl">
                                         <img
                                             src={service.image}
                                             alt={service.title}

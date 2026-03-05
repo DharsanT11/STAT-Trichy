@@ -7,7 +7,7 @@ const ServiceCard = ({ icon: Icon, title, description, delay = 0 }) => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: delay / 1000 }}
-            className="card p-8 group flex flex-col items-start"
+            className="card p-8 group flex flex-col items-start rounded-2xl"
         >
             <div className="w-14 h-14 bg-[#111] border border-[#333] mb-6 flex items-center justify-center group-hover:bg-accent group-hover:border-accent transition-all duration-300">
                 <Icon className="text-white text-2xl" />

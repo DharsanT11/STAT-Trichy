@@ -82,9 +82,9 @@ const Contact = () => {
                                         whileInView={{ opacity: 1, scale: 1 }}
                                         viewport={{ once: true }}
                                         transition={{ duration: 0.4, delay: i * 0.1 }}
-                                        className="border border-[#222] bg-[#0a0a0a] p-6 hover:border-accent transition-colors duration-300"
+                                        className="border border-[#222] bg-[#0a0a0a] p-6 hover:border-accent transition-colors duration-300 rounded-2xl"
                                     >
-                                        <div className="w-10 h-10 border border-[#333] flex items-center justify-center mb-4">
+                                        <div className="w-10 h-10 border border-[#333] flex items-center justify-center mb-4 rounded-xl">
                                             <item.icon className="text-white text-lg" />
                                         </div>
                                         <h3 className="font-condensed font-bold uppercase tracking-widest text-white text-sm mb-2">{item.title}</h3>
@@ -96,7 +96,7 @@ const Contact = () => {
 
                             <button
                                 onClick={() => openWhatsApp(getGeneralEnquiryMessage())}
-                                className="btn-primary w-full py-4 flex items-center justify-center gap-3"
+                                className="btn-primary w-full py-4 flex items-center justify-center gap-3 rounded-2xl"
                             >
                                 <FaWhatsapp className="text-lg" />
                                 Urgent WhatsApp Support
@@ -105,7 +105,7 @@ const Contact = () => {
 
                         {/* Contact Form (Flat & Stark) */}
                         <ScrollReveal direction="right" delay={0.15}>
-                            <div className="border border-[#222] bg-[#0a0a0a] p-8 md:p-12">
+                            <div className="border border-[#222] bg-[#0a0a0a] p-8 md:p-12 rounded-2xl">
                                 <h2 className="text-3xl font-condensed font-bold text-white uppercase tracking-wide mb-4">Transmission</h2>
                                 <p className="text-muted text-sm font-sans mb-10">Secure message to the data recovery lab.</p>
 
@@ -115,7 +115,7 @@ const Contact = () => {
                                             <label className="block text-xs font-condensed font-bold uppercase tracking-widest text-[#888] mb-2">Name</label>
                                             <input
                                                 type="text"
-                                                className="w-full bg-[#111] border border-[#333] px-4 py-3 text-white font-sans text-sm focus:border-accent focus:outline-none transition-colors"
+                                                className="w-full bg-[#111] border border-[#333] px-4 py-3 text-white font-sans text-sm focus:border-accent focus:outline-none transition-colors rounded-xl"
                                                 required
                                             />
                                         </div>
@@ -123,7 +123,7 @@ const Contact = () => {
                                             <label className="block text-xs font-condensed font-bold uppercase tracking-widest text-[#888] mb-2">Phone</label>
                                             <input
                                                 type="tel"
-                                                className="w-full bg-[#111] border border-[#333] px-4 py-3 text-white font-sans text-sm focus:border-accent focus:outline-none transition-colors"
+                                                className="w-full bg-[#111] border border-[#333] px-4 py-3 text-white font-sans text-sm focus:border-accent focus:outline-none transition-colors rounded-xl"
                                             />
                                         </div>
                                     </div>
@@ -132,14 +132,14 @@ const Contact = () => {
                                         <label className="block text-xs font-condensed font-bold uppercase tracking-widest text-[#888] mb-2">Email</label>
                                         <input
                                             type="email"
-                                            className="w-full bg-[#111] border border-[#333] px-4 py-3 text-white font-sans text-sm focus:border-accent focus:outline-none transition-colors"
+                                            className="w-full bg-[#111] border border-[#333] px-4 py-3 text-white font-sans text-sm focus:border-accent focus:outline-none transition-colors rounded-xl"
                                             required
                                         />
                                     </div>
 
                                     <div>
                                         <label className="block text-xs font-condensed font-bold uppercase tracking-widest text-[#888] mb-2">Issue Type</label>
-                                        <select className="w-full bg-[#111] border border-[#333] px-4 py-3 text-white font-sans text-sm focus:border-accent focus:outline-none transition-colors appearance-none">
+                                        <select className="w-full bg-[#111] border border-[#333] px-4 py-3 text-white font-sans text-sm focus:border-accent focus:outline-none transition-colors appearance-none rounded-xl">
                                             <option>Mechanical Failure</option>
                                             <option>Logical Corruption</option>
                                             <option>SSD/NAND Failure</option>
@@ -152,14 +152,14 @@ const Contact = () => {
                                         <label className="block text-xs font-condensed font-bold uppercase tracking-widest text-[#888] mb-2">Diagnostic Details</label>
                                         <textarea
                                             rows="4"
-                                            className="w-full bg-[#111] border border-[#333] px-4 py-3 text-white font-sans text-sm focus:border-accent focus:outline-none transition-colors resize-none"
+                                            className="w-full bg-[#111] border border-[#333] px-4 py-3 text-white font-sans text-sm focus:border-accent focus:outline-none transition-colors resize-none rounded-xl"
                                             required
                                         ></textarea>
                                     </div>
 
                                     <button
                                         type="submit"
-                                        className="btn-outline w-full py-4 mt-4"
+                                        className="btn-outline w-full py-4 mt-4 rounded-2xl"
                                     >
                                         Initialize Request
                                     </button>
