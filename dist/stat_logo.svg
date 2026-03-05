@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 200">
+  <defs>
+    <linearGradient id="powerGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#cc0000" />
+      <stop offset="50%" stop-color="#801a33" />
+      <stop offset="100%" stop-color="#2c3e50" />
+    </linearGradient>
+    <linearGradient id="powerGradLeft" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#cc0000" />
+      <stop offset="50%" stop-color="#551a33" />
+      <stop offset="100%" stop-color="#2c3e50" />
+    </linearGradient>
+    <linearGradient id="lineGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#e60000" />
+      <stop offset="100%" stop-color="#1a1a3a" />
+    </linearGradient>
+  </defs>
+
+  <!-- Power Button Icon -->
+  <g transform="translate(50, 45)">
+    <!-- Central line -->
+    <path d="M50 0 L50 45" stroke="#cc0000" stroke-width="14" stroke-linecap="round" fill="none" />
+    
+    <!-- Left outer ring curve -->
+    <path d="M30 18 A 45 45 0 0 0 50 100 A 45 45 0 0 0 70 18" stroke="url(#powerGradLeft)" stroke-width="16" stroke-linecap="round" fill="none" />
+    <!-- Right outer ring curve overlaying color to simulate lighting -->
+    <path d="M50 100 A 45 45 0 0 0 70 18" stroke="url(#powerGrad)" stroke-width="16" stroke-linecap="round" fill="none" />
+  </g>
+
+  <!-- Divider Line 1 -->
+  <rect x="180" y="45" width="4" height="110" fill="url(#lineGrad)" />
+
+  <!-- STAT Text -->
+  <text x="210" y="130" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="900" font-size="90" fill="#2c3e50" letter-spacing="15">STAT</text>
+
+  <!-- Divider Line 2 -->
+  <rect x="495" y="45" width="4" height="110" fill="url(#lineGrad)" />
+
+  <!-- DATA Recovery Services Text -->
+  <text x="515" y="95" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="45" fill="#2c3e50">DATA Recovery</text>
+  <text x="515" y="145" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="45" fill="#2c3e50">Services</text>
+</svg>
